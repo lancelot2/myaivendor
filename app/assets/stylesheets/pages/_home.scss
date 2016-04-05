@@ -2,3 +2,79 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+
+.banner {
+  color: white;
+  // text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+}
+.banner p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+
+
+.banner-content {
+  width: 660px;
+  padding-left: 33px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.icons h2 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.icon {
+  width: 350px;
+}
+
+.features h1 {
+  padding-top: 40px;
+}
+
+.examples {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.comparing {
+  padding: 40px;
+}
+
+.newsletter {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+}
