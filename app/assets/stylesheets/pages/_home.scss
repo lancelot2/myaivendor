@@ -91,6 +91,46 @@
   margin: 0px;
 }
 
+.feedback {
+  padding-bottom: 40px;
+}
+
+.riw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  width: 300px;
+  margin: 20px;
+  padding: 5px;
+  font-size: 25px;
+  background-color: #2E85FF;
+  border-radius: 20px;
+  color: white;
+}
+
+.riw p {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.rew {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.rew p {
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2E85FF;
+}
+
 .comparing {
   padding: 40px;
 }
