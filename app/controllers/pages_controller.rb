@@ -3,4 +3,6 @@ class PagesController < ApplicationController
   end
   def faq
   end
+  def how
+  end
 end

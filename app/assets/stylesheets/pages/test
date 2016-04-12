@@ -1,0 +1,42 @@
+  <hr>
+
+
+  <div class="examples">
+
+    <h1 class="text-center">Open A New Sales Channel</h1>
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-6">
+
+        <div class="avatars">
+          <div class="avatari text-center">
+            <%=image_tag("rachel-the-florist.jpg", class: "avatar-large")%>
+            <p style="padding-top: 5px;"><strong>Rachel</strong></p>
+            <p>Independant Florist</p>
+          </div>
+
+          <%=image_tag("relationship.png", class: "avatar-large", style: "padding-bottom: 40px;")%>
+
+          <div class="avatari text-center">
+            <%=image_tag("suzanne-2.png", class: "avatar-large")%>
+            <p><strong>Suzanne</strong></p>
+            <p>Life saver</p>
+          </div>
+        </div>
+
+        <div class="set-up">
+          <h3>Set up</h3>
+          <p><strong>Type:</strong> Impersonate</p>
+          <p><strong>Tone:</strong> Nice and calm</p>
+          <p><strong>Channel:</strong> Facebook Messenger</p>
+        </div>
+
+
+        <h2>Feedback</h2>
+        <em>"We had regular requests for on demand flowers delivery for a long time now. Unfortunately, we did not have the time, the size or the energy to build and maintain an app. My A.I. Vendor step up our messenger channel within a week, we decided to call it Suzanne and orders started arriving on our system."</em>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 text-center">
+        <%=image_tag("kensington-flower-chatbot-messenger-conversation.png", width: '350')%>
+      </div>
+    </div>
