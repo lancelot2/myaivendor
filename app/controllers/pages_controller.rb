@@ -5,4 +5,6 @@ class PagesController < ApplicationController
   end
   def how
   end
+  def demo
+  end
 end
