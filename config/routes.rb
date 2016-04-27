@@ -1,12 +1,36 @@
 Rails.application.routes.draw do
+
+
+  # devise_for :users
+  # root to: 'pages#home'
+
+  # get 'pages/faq'
+  # get 'pages/heineken'
+  # get 'pages/how'
+  # get 'pages/demo'
+  # get 'pages/features'
+
+
+  # scope '(:locale)', locale: /fr/ do
+  #   resources :pages
+  # end
+
+  scope '(:locale)', locale: /fr/ do
+    resources :pages do
+      member do
+        get 'faq'
+        get 'heineken'
+        get 'how'
+        get 'demo'
+        get 'features'
+      end
+    end
+  end
+
   devise_for :users
   root to: 'pages#home'
 
-  get 'pages/faq'
-  get 'pages/heineken'
-  get 'pages/how'
-  get 'pages/demo'
-  get 'pages/features'
+
     # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

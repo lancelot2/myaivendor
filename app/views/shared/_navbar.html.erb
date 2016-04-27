@@ -45,10 +45,11 @@
     <% else %>
 
       <!-- Login text link -->
-      <%= link_to t(".sign_in", default: "Features"), pages_features_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to t(".sign_in", default: "How it works"), pages_how_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to t(".sign_in", default: "FAQ"), pages_faq_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+
+      <%= link_to t("Features"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("How it works"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("FAQ"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
     <% end %>
 

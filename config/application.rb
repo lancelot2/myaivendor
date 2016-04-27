@@ -15,6 +15,8 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+config.i18n.default_locale = :en
+
 module MyVendor2
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
