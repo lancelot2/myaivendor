@@ -46,10 +46,19 @@
 
       <!-- Login text link -->
 
-      <%= link_to t("Features"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to t("How it works"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to t("FAQ"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to t("Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("features"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("how it works"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "FAQ", pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+
+      <div class="navbar-wagon-item">
+        <div class="dropdown">
+          <img src="https://goo.gl/JXX6cS" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu" style="min-width: 0px;">
+            <li><a href="/fr"><img src="https://goo.gl/WvIRbP" class="avatar dropdown-toggle"></a></li>
+          </ul>
+        </div>
+      </div>
 
     <% end %>
 
@@ -60,10 +69,10 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="pages/features">Features</a></li>
-        <li><a href="pages/how">How it works</a></li>
+        <li><a href="pages/features"><%= t('features') %></a></li>
+        <li><a href="pages/how"><%= t('how') %></a></li>
         <li><a href="pages/faq">FAQ</a></li>
-        <li><a href="users/sign_in">Login</a></li>
+        <li><a href="users/sign_in"><%= t('login') %></a></li>
       </ul>
     </div>
   </div>
