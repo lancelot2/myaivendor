@@ -10,6 +10,7 @@ gem 'devise'
 gem 'redis'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+gem 'coffee-rails'
 
 gem 'sass-rails'
 gem 'jquery-rails'

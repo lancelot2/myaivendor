@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount ActionCable.server => '/cable'
   get 'rooms/show'
 
   devise_for :users
@@ -83,5 +84,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  mount ActionCable.server => '/cable'
+
 end
