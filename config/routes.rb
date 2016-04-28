@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-
+  devise_for :users
+  root to: 'pages#home'
 
   # devise_for :users
   # root to: 'pages#home'
@@ -16,19 +17,10 @@ Rails.application.routes.draw do
   # end
 
   scope '(:locale)', locale: /fr/ do
-    resources :pages do
-      member do
-        get 'faq'
-        get 'heineken'
-        get 'how'
-        get 'demo'
-        get 'features'
-      end
-    end
+    get '/faq', to: 'pages#faq'
   end
 
-  devise_for :users
-  root to: 'pages#home'
+
 
 
     # The priority is based upon order of creation: first created -> highest priority.
