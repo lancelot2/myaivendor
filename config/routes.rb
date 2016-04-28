@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'rooms/show'
+
   devise_for :users
   root to: 'pages#home'
 
@@ -23,6 +25,7 @@ Rails.application.routes.draw do
     get '/features', to: 'pages#features'
     get '/demo_request', to: 'pages#demo_request'
     get '/demo', to: 'pages#demo'
+    get '/show', to: 'rooms#show'
   end
 
 
@@ -80,4 +83,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  mount ActionCable.server => '/cable'
 end
