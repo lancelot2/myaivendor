@@ -46,18 +46,27 @@
 
       <!-- Login text link -->
 
-      <%#= link_to t("features"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%#= link_to t("how it works"), pages_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("features"), features_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("how"), how_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "FAQ", faq_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%#= link_to t("login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t("login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
       <div class="navbar-wagon-item">
-        <div class="dropdown">
-          <img src="https://goo.gl/JXX6cS" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu" style="min-width: 0px;">
-            <li><a href="/fr"><img src="https://goo.gl/WvIRbP" class="avatar dropdown-toggle"></a></li>
-          </ul>
-        </div>
+        <% if request.original_url.include? "fr" %>
+          <div class="dropdown">
+            <img src="https://goo.gl/WvIRbP" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+            <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu" style="min-width: 0px;">
+              <li><a href="/"><img src="https://goo.gl/JXX6cS" class="avatar dropdown-toggle"></a></li>
+            </ul>
+          </div>
+        <% else %>
+          <div class="dropdown">
+            <img src="https://goo.gl/JXX6cS" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+            <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu" style="min-width: 0px;">
+              <li><a href="/fr"><img src="https://goo.gl/WvIRbP" class="avatar dropdown-toggle"></a></li>
+            </ul>
+          </div>
+        <% end %>
       </div>
 
     <% end %>

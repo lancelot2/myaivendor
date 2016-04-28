@@ -17,22 +17,13 @@ Rails.application.routes.draw do
   # end
 
   scope '(:locale)', locale: /fr/ do
-<<<<<<< HEAD
-    get 'faq'
-    get 'heineken'
-    get 'how'
-    get 'demo'
-    get 'features'
-
-  devise_for :users
-  root to: 'pages#home'
-  end
-=======
+    get '/', to: 'pages#home'
     get '/faq', to: 'pages#faq'
+    get '/how', to: 'pages#how'
+    get '/features', to: 'pages#features'
+    get '/demo_request', to: 'pages#demo_request'
+    get '/demo', to: 'pages#demo'
   end
-
-
->>>>>>> fb6f759dadf5114c2a33d9bf418991f28189bd0d
 
 
     # The priority is based upon order of creation: first created -> highest priority.

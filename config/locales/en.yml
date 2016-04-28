@@ -32,3 +32,13 @@ en:
   upgrades_own: "Transparent for the user"
 
   request: "Request an invite to our private beta"
+
+
+  demo_title: "Welcome to our Hipster Store bot demo"
+  who: "Who are we ?"
+  store_description: "Our fashion store is small but nice. We are a group of independant fashion designer and artists selling both offline and online. We sell a bunch of hipster clothes"
+  shirts: "Shirts"
+  bottoms: "Bottoms"
+  hats: "Hats"
+  shoes: "Shoes"
+  store_fake: "Unfortunately, our store is all fake but we still hope you can enjoy our product demo."

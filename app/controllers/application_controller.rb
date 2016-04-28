@@ -13,4 +13,9 @@ class ApplicationController < ActionController::Base
     { locale: I18n.locale == I18n.default_locale ? nil : I18n.locale }
   end
 
+  def which_local
+    @locale = params["locale"]
+  end
+
+
 end
