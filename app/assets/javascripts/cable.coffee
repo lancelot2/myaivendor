@@ -1,2 +1,3 @@
-@app ||= {}
+
+@App ||= {}
 App.cable = ActionCable.createConsumer()
